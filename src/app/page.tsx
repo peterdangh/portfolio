@@ -291,7 +291,13 @@ export default function Home() {
           <p>
             © {new Date().getFullYear()} {profile.name}
           </p>
-          <p className="font-mono">Built with Next.js · Tailwind CSS</p>
+          <p className="flex items-center gap-2 font-mono">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+            </span>
+            available for work · Da Nang, VN
+          </p>
         </div>
       </footer>
     </>
